@@ -10,6 +10,7 @@
 \DeclareMathOperator{\se}{SE}
 \DeclareMathOperator{\de}{p}
 \DeclareMathOperator{\CM}{C}
+\DeclareMathOperator{\pval}{p}
 
 \title{Projetkna naloga pri statistiki}
 \author{Tadej Mohorčič}
@@ -31,7 +32,7 @@
 
     \subsection{A del naloge}
     Tukaj smo vzeli naključno izbran delež 200 družin iz celotne populacije. Kot oceno za delež populacije smo tako vzeli kar delež na tem naključno izbranem vzorcu.
-    \par \textbf{Ocena za delež je 0.205.}
+    \par \textbf{Ocena za delež je $0.205$.}
 
     \subsection{B del naloge}
     Oceno za standardno napako najdemo s formulo
@@ -40,13 +41,13 @@
     \]
     kjer je $N$ velikost populacije, $n$ velikost vzorca, $\de$ pa je populacijski delež. Za $\de$ tukaj uporabimo rezultat iz prejšnje naloge. Za interval zaupanja pa lahko
     vzamemo kar $\de \pm 1.96{\widehat{\se}_{+}}^2$.
-    \par \textbf{Standardna napaka je 0.0299879137.}
-    \par \textbf{Interval zaupanja je (0.1671131677, 0.2992038693).}
+    \par \textbf{Standardna napaka je $0.0299879137$.}
+    \par \textbf{Interval zaupanja je $(0.1671131677, 0.2992038693)$.}
 
     \subsection{C del naloge}
     Pravi populacijski delež in pravo standardno napako najdemo kar z uporabo funkcij .mean() in .var().
-    \par \textbf{Pravi populacijski delež je 0.2115025293.}
-    \par \textbf{Prava standardna napaka je 0.0288767216.}
+    \par \textbf{Pravi populacijski delež je $0.2115025293$.}
+    \par \textbf{Prava standardna napaka je $0.0288767216$.}
     \par \textbf{Interval zaupanja pokrije pravi populacijski delež.}
 
     \subsection{D del naloge}
@@ -58,13 +59,13 @@
         \end{center} 
     \end{figure}
     Tukaj smo morali zgenerirati še 99 vzorcev velikosti 200, in za vsakega izračunati interval zaupanja, ti pa so prikazani na sliki \ref{200}.
-    \par \textbf{92 intervalov zaupanja pokrije populacijski delež.}
+    \par \textbf{$92$ intervalov zaupanja pokrije populacijski delež.}
 
     \subsection{E del naloge}
     Standardni odklon vzorčnih deležev izračunamo kar z .std(), standardno napako za vzorec velikosti 200 pa po enaki formuli kot prej, le da vstavimo v formulo populacijski delež.
     Pri primerjavi pride do zelo majhnega odstopanja, zato bi rekli da je standardni odklon primerljiv z standardno napako za vzorec velikosti 200.
-    \par \textbf{Standardni odklon je 0.0297648702.}
-    \par \textbf{Standardna napaka za vzorec velikosti 200 je 0.0288828163.}
+    \par \textbf{Standardni odklon je $0.0297648702$.}
+    \par \textbf{Standardna napaka za vzorec velikosti $200$ je $0.0288828163$.}
 
     \subsection{F del naloge}
     Zadnji dve točki smo morali ponoviti še za vzorce velikosti 800. Do rezultatov pridemo po isti poti kot zgoraj.
@@ -78,20 +79,20 @@
     Intervali zaupanja so za večji populacijski delež precej bolj skoncentrirani ob sredini, prav tako pa so tudi ožji, kar lahko razberemo iz tabele Data800. Opazno pa je
     tudi standardni odklon precej manjši, in tudi bližji pravi standardni napaki za vzorev velikosti 800. Verjetno se bosta ti dve vrednosti še bolj zbližali, če velikost vzorca
     pošljemo proti večji številki.
-    \par \textbf{97 intervalov zaupanja pokrije populacijski delež.}
-    \par \textbf{Standardni odklon je 0.0141844710}
-    \par \textbf{Standardna napaka za vzorec velikosti 800 je 0.0143149434.}
+    \par \textbf{$97$ intervalov zaupanja pokrije populacijski delež.}
+    \par \textbf{Standardni odklon je $0.0141844710$}
+    \par \textbf{Standardna napaka za vzorec velikosti $800$ je $0.0143149434$.}
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     \section{Druga naloga}
-    Pri tej nalogi smo obdelali odčitane telesne temperature pri moških in pri ženskah, kjer smo privzeli da sta za oba spola ti vrednosti porazdeljeni normalno.
+    Pri tej nalogi smo obdelali odčitane telesne temperature pri moških in pri ženskah, kjer smo privzeli, da sta za oba spola ti vrednosti porazdeljeni normalno.
 
     \subsection{A del naloge}
     Za oceno povprečja in standardnega odklon lahko uporabimo kar funkciji .mean() in .std(). Vemo, da je povprečje na vzorcu dobra cenilka za povprečje, medtem ko funckija
     .std() zraven še upošteva faktor $\frac{1}{N - 1}$, za katerega pa tudi vemo, da je nepristranska cenilka.
-    \par \textbf{Povprečje je 36.7247863248 pri moških in 36.8854700855 pri ženskah.}
-    \par \textbf{Standardni odklon je 0.3881976457 pri moških in 0.4130487515 pri ženskah.}
+    \par \textbf{Povprečje je $36.7247863248$ pri moških in $36.8854700855$ pri ženskah.}
+    \par \textbf{Standardni odklon je $0.3881976457$ pri moških in $0.4130487515$ pri ženskah.}
 
     \subsection{B del naloge}
     Za obe povprečji smo morali doložiti 95\% interval zaupanja. V šoli smo pokazali, da če $\sigma$ ni znan (pri nas ne poznamo točne vrednosti), potem za X, ki je
@@ -104,8 +105,8 @@
     \[
         \CM_{\alpha} = 1.9977\frac{\widehat{\sigma}^{+}}{\sqrt{n}}
     \]
-    \par \textbf{Interval zaupanja za moške je (36.6285970859, 36.8209755637).}
-    \par \textbf{Interval zaupanja za ženske je (36.7831231354, 36.9878170355).}
+    \par \textbf{Interval zaupanja za moške je $(36.6285970859, 36.8209755637)$.}
+    \par \textbf{Interval zaupanja za ženske je $(36.7831231354, 36.9878170355)$.}
 
     \subsection{C del naloge}
     Sedaj pa moramo testirati domnevo, da imajo moški in ženske v povprečju enako telesno temperaturo. Imamo torej $M_{1}, \ldots, M_{65}$ in $Z_{1}, \ldots, Z_{65}$ porazdeljeno
@@ -127,6 +128,70 @@
         P(|\overline{M} - \overline{Z}| \leq \CM_{\alpha}) \leq \alpha 
     \]
     dobimo rezultate. Ker je $|\overline{M} - \overline{Z}| = 0.1606837607$, bomo domnevo obdržali le pri 0.01 stopnji tveganja.
-    \par \textbf{Pri stopnji tveganja 0.05 je interval (-0.1391179454, 0.1391179454).}
-    \par \textbf{Pri stopnji tveganja 0.01 je interval (-0.1838407053, 0.1838407053).}
+    \par \textbf{Pri stopnji tveganja $0.05$ je interval $(-0.1391179454, 0.1391179454)$.}
+    \par \textbf{Pri stopnji tveganja $0.01$ je interval $(-0.1838407053, 0.1838407053)$.}
+
+    \section{Tretja naloga}
+    Pri tej nalogi pa se ukvarjamo z izmerjenimi temperaturami v Ljubljani med leti 1986 ter 2020.
+    \subsection{A del naloge}
+    Najprej smo morali modelirati spreminjanje temperature z enostavno linearno regresijo, torej poiskati takšne koeficiente $a$ in $b$, da se bo premica
+    \[
+        y = ax + b  
+    \]
+    najbolj prilegala našim meritvam. Vektor enic ter vektor $x$-ov lahko zapakiramo v $420\times2$ matriko, ki izgleda tako:
+    \[
+        \begin{bmatrix}
+            1 & 0 \\
+            1 & 1 \\
+            1 & 2 \\
+            \vdots & \vdots \\
+            1 & 418 \\
+            1 & 419
+        \end{bmatrix}  
+    \]
+    Predoločen sistem $y = A*x$ lahko rešimo z metodo najmanjših kvadratov: $x = (A^\intercal A)^{-1}A^\intercal y$, lahko pa uporabimo tudi katero od funkcij iz paketa scipy.stats.
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[scale=0.5]{../PythonKoda/EnLinReg.png}
+            \caption{Enostavna linearna regresija}
+            \label{ELR}
+        \end{center} 
+    \end{figure}
+    Opazimo lahko, da se letno temperatura poveča za $0.06830$ stopinje Celzij. Prav tako lahko poračunamo $\pval$-vrednost, ki je enaka $0.06221$, kar pomeni, da bomo
+    obdržali ničelno hipotezo.
+    \par \textbf{Linerni trend spreminjanja temperature ni statistično značilen.}
+
+    \subsection{B del naloge}
+    Sedaj pa smo morali modelirati spreminjanje temperature tako, da smo zraven upoštevali še periodično nihanje temperature. Uporabil bom periodo 1 leto, saj se mi zdi, da se
+    letno zgodita ekstrema le v poletnih in zimskih mesecih. Radi bi našli torej koeficiente $a$, $b$, $c$ in $d$, da se bo
+    \[
+        y = a + bx +c\sin(x)+d\cos(x)
+    \]
+    najbolj prilegala našim točkam. Tako smo dobili matriko
+    \[
+        \begin{bmatrix}
+            1 & 0 & 0 & 1 \\
+            1 & 1 & \sin(\frac{\pi}{6}) & \cos(\frac{\pi}{6}) \\
+            \vdots & \vdots & \vdots & \vdots \\
+            1 & 419 & \sin(\frac{419\pi}{6}) & \cos(\frac{419\pi}{6})
+        \end{bmatrix}  
+    \]
+    Sedaj imamo spet predoločen sistem, tokrat velikosti $420\times4$.
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[scale=0.5]{../PythonKoda/NihLinReg.png}
+            \caption{Linearna regresija s periodo nihanja 1 leto}
+            \label{NLR}
+        \end{center} 
+    \end{figure}
+    Tudi tokrat pride do letnega spreminjanja temperature, letno pa se temperatura poveča za $0.06422$.
+    \subsection{C del naloge}
+    Tukaj smo morali napovedati povprečno letno temperaturo za 2040 ter za mesec Januar istega leta. Zato lahko uporabimo kar krivuljo ali premico iz A ali B dela naloge. Za
+    $95\%$ interval zaupanja pa uporabimo formulo
+    \[
+        \hat{y} \pm t_{crit} * s_{y x} \sqrt{\frac{1}{n} + \frac{(x - \overline{x})}{SS_{x}}}  
+    \] 
+    kjer je $\hat{y}$ napovedana vrednost, $x$ vrednost, pri kateri napovedujemo, $t_{crit}$ pa t-vrednost, ki jo dobimo iz stopnje tveganja ter stopnje prostosti.
+    \par \textbf{Napovedana temperatura za mesec Januar 2040 je $3.21778426^\circ C$, interval zaupanja pa je $(0.49553924^\circ C, 5.940029^\circ C)$.}
+    \par \textbf{Napovedana povprečna temperatura za leto 2040 je $13.63297137^\circ C$, interval zaupanja pa je $(9.96553995^\circ C, 17.60218744^\circ C)$.}
 \end{document}
