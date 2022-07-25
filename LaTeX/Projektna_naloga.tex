@@ -191,7 +191,9 @@
     \[
         \hat{y} \pm t_{crit} * s_{y x} \sqrt{\frac{1}{n} + \frac{(x - \overline{x})}{SS_{x}}}  
     \] 
-    kjer je $\hat{y}$ napovedana vrednost, $x$ vrednost, pri kateri napovedujemo, $t_{crit}$ pa t-vrednost, ki jo dobimo iz stopnje tveganja ter stopnje prostosti.
+    kjer je $\hat{y}$ napovedana vrednost, $x$ vrednost, pri kateri napovedujemo, $t_{crit}$ t-vrednost, ki jo dobimo iz stopnje tveganja ter stopnje prostosti. $s_{y x}$ predstavlja
+    standardno napako napovedane spremenljivke y glede na x, $SS_{x}$ pa predstavlja vsoto kvadratov odstopanja vrednosti $x$ od njihovega povrpečja. Pri računanju intervala
+    zaupanja za mesec Januar uporabimo $n = 420$, medtem ko za letno povprečje nadomestimo to z $m = 34$, saj imamo podatke za toliko let.
     \par \textbf{Napovedana temperatura za mesec Januar 2040 je $3.21778426^\circ C$, interval zaupanja pa je $(0.49553924^\circ C, 5.940029^\circ C)$.}
     \par \textbf{Napovedana povprečna temperatura za leto 2040 je $13.63297137^\circ C$, interval zaupanja pa je $(9.96553995^\circ C, 17.60218744^\circ C)$.}
 \end{document}
